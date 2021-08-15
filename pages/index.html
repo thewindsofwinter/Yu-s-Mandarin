@@ -88,7 +88,7 @@
 					if(consonants === 6){
 						consonants = 0;
 						rot13 = !rot13;
-					}	
+					}
 					var c = cphr2.charAt(i);
 					if(rot13){
 						//Implement rot13
@@ -112,7 +112,11 @@
 			}
 		</script>
 		<div id = "menu">
-			<p unselectable = "on" id = "menu-open"><span onClick = "toggleMenu()">&#9776;</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Yu's Mandarin<span onClick = "setColor()" id = "cc">Change Style</span></p>
+			<p unselectable = "on" id = "menu-open">
+				<span onClick = "toggleMenu()">&#9776;</span>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Yu's Mandarin
+				<span onClick = "setColor()" id = "cc">Change Style</span>
+			</p>
 			<ul id="list-nav">
 				<li id = "main" onMouseOver = "setOpacity(this, 0.5)" onMouseOut = "setOpacity(this, 1)"><a href = "index.html">Main Page</a></li>
 				<li id = "data" onMouseOver = "setOpacity(this, 0.5)" onMouseOut = "setOpacity(this, 1)"><a href = "data.html" class = "right">Data Table</a></li>
@@ -124,14 +128,14 @@
 		<div id = "content">
 			<h2>Yu's Mandarin: A brief history</h2>
 			<p>Yu's Mandarin was invented by student Jonathan Yu at Johnny University during a boring lecture in the class
-               History of Cryptography (103). It's a piecewise function, alternating between ROT13 and a Vigenère cipher. 
-			   Yu had a game going with fellow classmates where they added certain forbidden words to the code every math exam. 
-			   The words started with 'mine' and now include 'now', 'here', 'this', and 'on'. Therefore, the code was based off 
+               History of Cryptography (103). It's a piecewise function, alternating between ROT13 and a Vigenï¿½re cipher.
+			   Yu had a game going with fellow classmates where they added certain forbidden words to the code every math exam.
+			   The words started with 'mine' and now include 'now', 'here', 'this', and 'on'. Therefore, the code was based off
 			   of the word that started it, 'mine'.</p>
 			<ol>
-			<li>Starts as Vigenère cipher with a key of “mine”.</li>
-			<li>After every 6th consonant, it switches between ROT13 and Vigenère cipher.</li>
-			<li>After every “m” in the final ciphertext, an “e” is added right after it. This is to confuse frequency analysis.</li>
+			<li>Starts as Vigenï¿½re cipher with a key of ï¿½mineï¿½.</li>
+			<li>After every 6th consonant, it switches between ROT13 and Vigenï¿½re cipher.</li>
+			<li>After every ï¿½mï¿½ in the final ciphertext, an ï¿½eï¿½ is added right after it. This is to confuse frequency analysis.</li>
 			</ol>
 			<figure>
 				<a title="By PhilippeTeuwen (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ACipherText_Stealing_(CTS)_on_CBC%2C_encryption_mode.svg" target = "_blank"><img width="100%" alt="CipherText Stealing (CTS) on CBC, encryption mode" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/CipherText_Stealing_%28CTS%29_on_CBC%2C_encryption_mode.svg/512px-CipherText_Stealing_%28CTS%29_on_CBC%2C_encryption_mode.svg.png"/></a>
